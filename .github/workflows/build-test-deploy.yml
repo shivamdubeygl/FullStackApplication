@@ -1,0 +1,14 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    tags: ['*']
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-test-deploy-release:
+    name: CI/CD
+    uses: ./.github/workflows/angular.yml
+    secrets: inherit

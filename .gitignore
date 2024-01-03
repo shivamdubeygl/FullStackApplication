@@ -76,3 +76,9 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Igonore the Data folder
+Data/Abrasives & Bearings.xlsx
+Data/Advertising & Media Agencies.xlsx
+Data/Aerospace & Defense.xlsx
+Data/Airline.xlsx

@@ -1,14 +1,53 @@
-# Angular Codespace
+# Full Stack Application Sector Analysis
 
-A [Codespace](https://github.com/features/codespaces) for Typescript Angular projects.
-For more information see the [documentation](https://docs.github.com/en/codespaces).
+# Angular-Flask Project
 
-<a href="https://docs.github.com/en/codespaces">
-  <img src="https://user-images.githubusercontent.com/22425467/157051905-a6b38834-a6e3-49dc-b16e-804525b5d42a.png" width="300px">
-</a>
+This project demonstrates the integration of Angular with Flask for creating a web application to display data from Excel files in a pie chart.
 
-Project generated with the [Angular CLI](https://angular.io/cli).
+## Overview
 
-<a href="https://angular.io/cli">
-  <img src="https://user-images.githubusercontent.com/22425467/157052145-3121e5a8-4a81-4dd8-a3d9-841ffea54e4f.png" width="300px">
-</a>
+The project comprises two main components: Angular frontend and Flask backend. Angular is used for the frontend development, handling UI components, and making API requests to the Flask backend. Flask serves as the backend server, providing APIs to retrieve data from Excel files and prepare it for visualization in the frontend.
+
+### Technologies Used
+
+- Angular (Frontend)
+- TypeScript
+- HTML/CSS
+- Angular Material
+- Flask (Backend)
+- Python
+- Pandas library for data manipulation
+
+## Project Structure
+
+The project structure consists of the following components:
+
+- `frontend/`: Angular application
+  - `src/app`: Contains components, services, and modules for frontend functionality.
+  - `src/app/components`: Angular components like `AppComponent`, `PiechartComponent`, and `NavbarComponent`.
+  - `src/app/services`: Angular services handling API requests.
+- `backend/`: Flask application
+  - `app.py`: Backend code using Flask to serve APIs.
+  - `Data/`: Folder containing Excel files with data.
+
+## Setup Instructions
+
+### Frontend (Angular)
+1. Navigate to the `frontend/` directory.
+2. Install dependencies: `npm install`
+3. Start the Angular development server: `ng serve`
+
+### Backend (Flask)
+1. Navigate to the `backend/` directory.
+2. Create a virtual environment (optional but recommended).
+3. Install Flask and required dependencies: `pip install flask pandas flask-cors`
+4. Run the Flask server: `python app.py`
+
+## Usage
+
+1. Access the Angular application by visiting `http://localhost:4200` in a web browser.
+2. Use the provided components to navigate, select an Excel file, and visualize data in a pie chart.
+3. The frontend sends requests to the Flask backend to retrieve and process data from Excel files.
+
+
+

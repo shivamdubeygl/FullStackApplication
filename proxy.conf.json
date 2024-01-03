@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "https://automatic-space-train-v66gj966pp7vc7rg-5000.app.github.dev",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+  
